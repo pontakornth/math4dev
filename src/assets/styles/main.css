@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Kanit:ital,wght@0,400;0,700;1,400;1,700&family=Trirong:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @tailwind base;
 
 a {
@@ -6,6 +7,21 @@ a {
 
 a:hover {
   @apply underline;
+}
+
+body {
+  @apply font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display;
+}
+
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+	font-family: "Fira Code", Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
 }
 
 @tailwind components;

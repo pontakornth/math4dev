@@ -1,7 +1,12 @@
 module.exports = {
   purge: ['./src/**/*.ejs', './src/**/*.md'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        display: ['"Kanit"', 'sans-serif'],
+        body: ['"Trirong"', 'sans-serif'],
+      },
+    },
   },
   variants: {},
   plugins: [],

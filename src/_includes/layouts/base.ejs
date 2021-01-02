@@ -46,7 +46,9 @@
         "@context": "http://schema.org"
       }
     </script>
-    <% } %><%- include('webpack.ejs') %> <% if (page.url == "/") { %>
+    <% } %>
+    <!-- This is for importing CSS as Webpack do it-->
+    <%- include('webpack.ejs') %> <% if (page.url == "/") { %>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       if (window.netlifyIdentity) {
