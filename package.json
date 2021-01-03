@@ -64,5 +64,8 @@
     "*.json": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "alpinejs": "^2.8.0"
   }
 }
