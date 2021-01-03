@@ -14,7 +14,7 @@ body {
 }
 
 html, body {
-  @apply h-full;
+  @apply h-full dark:bg-dark dark:text-light;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -103,7 +103,7 @@ pre[class*="language-"] {
 }
 
 .content table {
-  @apply whitespace-no-wrap my-8 border-collapse block overflow-auto;
+  @apply whitespace-nowrap my-8 border-collapse block overflow-auto;
 }
 
 .content th,

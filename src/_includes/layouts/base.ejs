@@ -64,11 +64,14 @@
     <% } %>
     <script>
       // Toggle dark mode (from Tailwind website)
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.querySelector('html').classList.add('dark')
-      } else {
-        document.querySelector('html').classList.remove('dark')
+      function toggleDarkMode() {
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.querySelector('html').classList.add('dark');
+        } else {
+          document.querySelector('html').classList.remove('dark');
+        }
       }
+      toggleDarkMode();
     </script>
     <script src="js/alpine.js?v=<%= String(Date.now()) %>"></script>
   </head>
