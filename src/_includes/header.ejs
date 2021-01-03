@@ -5,7 +5,13 @@
             <li><a href="/">Home</a></li>
         </ul>
         <ul class="navbar-menu">
-            <li>Insert dark mode toggle here</li>
+            <li x-data="{theme: localStorage.theme}">
+                <button :class="` p-2 transition-colors duration-100 text-sm border rounded ${theme === 'dark' ? ' bg-white text-black ' : ' bg-black text-white '}`"
+                        x-text="theme === 'dark' ? 'Light Mode' : 'Dark Mode'"
+                        @click="theme = theme === 'dark' ? 'light' : 'dark'"
+                >
+                </button>
+            </li>
         </ul>
     </div>
 </nav>

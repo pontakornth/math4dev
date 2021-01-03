@@ -62,6 +62,15 @@
       }
     </script>
     <% } %>
+    <script>
+      // Toggle dark mode (from Tailwind website)
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.querySelector('html').classList.add('dark')
+      } else {
+        document.querySelector('html').classList.remove('dark')
+      }
+    </script>
+    <script src="js/alpine.js?v=<%= String(Date.now()) %>"></script>
   </head>
 
   <body class="antialiased flex flex-col w-full text-gray-700">
