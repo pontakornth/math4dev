@@ -1,3 +1,7 @@
+WHat is math4.dev?
+
+Have you ever confused when you face giants of math confusing? We also hold this experience (especailly engineering math or com-sci class in university). So why dont we have common space for short-notes? Here's it.
+
 ---
 title: 'Eleventy Starter Boilerplate Presentation'
 description: Everything you need to use this Eleventy Boilerplate template
