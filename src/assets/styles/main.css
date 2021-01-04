@@ -48,6 +48,14 @@ pre[class*="language-"] {
   @apply mr-4;
 }
 
+.footer-container {
+ @apply font-display text-base md:text-xl flex;
+}
+
+.footer {
+ @apply container mx-auto flex p-4 flex-col text-center md:flex-row md:text-left;
+}
+
 .content {
   @apply tracking-wider leading-8 text-xl;
 }
